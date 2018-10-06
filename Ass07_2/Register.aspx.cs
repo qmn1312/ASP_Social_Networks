@@ -24,12 +24,20 @@ namespace Ass07_2
                 //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
 
-                signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
+                signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
                 IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"] + "/Home", Response);
             }
-            else 
+            else
             {
                 ErrorMessage.Text = result.Errors.FirstOrDefault();
+            }
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Request.IsAuthenticated)
+            {
+                Response.Redirect("/Home");
+                return;
             }
         }
     }

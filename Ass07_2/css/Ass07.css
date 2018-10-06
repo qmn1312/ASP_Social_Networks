@@ -7,3 +7,38 @@
     width: 100%;
     height: 100%;
 }
+
+#OthersSelectable .ui-selecting {
+    background: #FECA40;
+}
+
+#OthersSelectable .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+#OthersSelectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#OthersSelectable li {
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 1.4em;
+    height: 50px;
+}
+
+.snakeBox{
+    position: relative;
+    margin-top: -25px;
+    width: 3cm;
+    height: 3cm;
+    border: solid 1px;
+}
+
+#snakeDiv{
+    width: 1000px;
+}
