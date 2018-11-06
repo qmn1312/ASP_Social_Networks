@@ -10,4 +10,8 @@
         <li class="ui-widget-content">Snapchat</li>
     </ol>
 
+    <br /> <br />
+    <h3><a runat="server" href="DatabasesHome">View Databases</a></h3>
+    <h3><a runat="server" href="EntertainmentHome">Entertainment</a></h3>
+
 </asp:Content>

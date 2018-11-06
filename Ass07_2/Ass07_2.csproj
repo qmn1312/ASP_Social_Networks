@@ -169,12 +169,23 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="App_Data\SocialNetworks.mdf" />
+    <Content Include="App_Data\SocialNetworks_log.ldf">
+      <DependentUpon>SocialNetworks.mdf</DependentUpon>
+    </Content>
+    <Content Include="CEOs.aspx" />
+    <Content Include="Companies.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\Ass07.css" />
+    <Content Include="css\Ass07_2.css" />
+    <Content Include="DatabaseManage.aspx" />
+    <Content Include="DatabasesHome.aspx" />
+    <Content Include="EntertainManage.aspx" />
+    <Content Include="EntertainmentHome.aspx" />
     <Content Include="Headquarters.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="favicon.ico" />
@@ -191,7 +202,11 @@
     <Content Include="Account\Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="javascript\Ass07.js" />
+    <Content Include="javascript\Ass07_2.js" />
+    <Content Include="Join.aspx" />
     <Content Include="LoginRegister.Master" />
+    <Content Include="Databases.Master" />
+    <Content Include="Entertainment.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Manage.aspx" />
     <Content Include="Others.aspx" />
@@ -346,6 +361,62 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CEOs.aspx.cs">
+      <DependentUpon>CEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CEOs.aspx.designer.cs">
+      <DependentUpon>CEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Companies.aspx.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Companies.aspx.designer.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManage.aspx.cs">
+      <DependentUpon>DatabaseManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseManage.aspx.designer.cs">
+      <DependentUpon>DatabaseManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Databases.Master.cs">
+      <DependentUpon>Databases.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Databases.Master.designer.cs">
+      <DependentUpon>Databases.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DatabasesHome.aspx.cs">
+      <DependentUpon>DatabasesHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabasesHome.aspx.designer.cs">
+      <DependentUpon>DatabasesHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntertainManage.aspx.cs">
+      <DependentUpon>EntertainManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntertainManage.aspx.designer.cs">
+      <DependentUpon>EntertainManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entertainment.Master.cs">
+      <DependentUpon>Entertainment.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entertainment.Master.designer.cs">
+      <DependentUpon>Entertainment.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EntertainmentHome.aspx.cs">
+      <DependentUpon>EntertainmentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntertainmentHome.aspx.designer.cs">
+      <DependentUpon>EntertainmentHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Headquarters.aspx.cs">
       <DependentUpon>Headquarters.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,6 +433,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Join.aspx.cs">
+      <DependentUpon>Join.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Join.aspx.designer.cs">
+      <DependentUpon>Join.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginRegister.Master.cs">
       <DependentUpon>LoginRegister.Master</DependentUpon>
@@ -417,7 +495,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>

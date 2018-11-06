@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Create Boxes Like Snake" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Snake.aspx.cs" Inherits="Ass07_2.Snake" %>
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="Create Boxes Like Snake" Language="C#" MasterPageFile="~/Entertainment.Master" AutoEventWireup="true" CodeBehind="Snake.aspx.cs" Inherits="Ass07_2.Snake" %>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="EntertainmentContent" runat="server">
     <h2><%: Title %>.</h2>
 
     <label for="spinner">Select a number of boxes:</label>
