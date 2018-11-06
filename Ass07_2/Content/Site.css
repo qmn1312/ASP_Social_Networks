@@ -25,8 +25,7 @@ input[type="email"],
 input[type="tel"],
 input[type="select"] {
     max-width: 280px;
-    width: 354px;
-}
+    }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

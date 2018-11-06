@@ -49,7 +49,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" runat="server" href="~/Home">Social Networks</a>
                 </div>
@@ -58,7 +57,6 @@
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Headquarters">Headquarters</a></li>
                         <li><a runat="server" href="~/Others">Others</a></li>
-                        <li><a runat="server" href="~/Snake">Entertainment: Snake</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
